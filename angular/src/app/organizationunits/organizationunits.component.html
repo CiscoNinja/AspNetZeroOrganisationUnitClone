@@ -1,0 +1,14 @@
+<section class="col-md-6" [style]="{'padding': '1em'}">
+  <p-card>
+    <div class="card-header align-items-center border-0">
+      <h3 class="card-title align-items-start flex-column"><span class="font-weight-bolder text-dark"> {{ "OrganizationUnits" | localize }}</span></h3>
+      <div class="card-toolbar text-right">
+        <button class="btn btn-primary ng-star-inserted" (click)="createOrganizationUnit()"><i class="fa fa-plus"></i>
+          {{ "Add Root Unit" | localize }} </button>
+      </div>
+    </div>
+    <p-tree [value]="files" selectionMode="single" [(selection)]="selectedFile" [contextMenu]="cm"></p-tree>
+  </p-card>
+</section>
+<p-contextMenu #cm [model]="items"></p-contextMenu>
+<p-toast></p-toast>

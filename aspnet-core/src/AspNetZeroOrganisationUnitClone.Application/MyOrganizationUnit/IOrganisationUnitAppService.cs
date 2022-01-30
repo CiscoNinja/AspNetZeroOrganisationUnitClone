@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace AspNetZeroOrganisationUnitClone.MyOrganizationUnit
 {
-    public interface IOrganisationUnitAppService : IAsyncCrudAppService<MyOrganizationUnitDto, long, PagedAndSortedResultRequestDto, CreateMyOrganizationUnitDto, MyOrganizationUnitDto>
+    public interface IOrganisationUnitAppService : IAsyncCrudAppService<OrganizationUnitDto, long, PagedAndSortedResultRequestDto, CreateOrganizationUnitDto, OrganizationUnitDto>
     {
         //Task<OrganizationUnitDto> CreateOU(CreateOrganizationUnitDto organizationUnit);
         List<OUListDto> GetFileStructure();

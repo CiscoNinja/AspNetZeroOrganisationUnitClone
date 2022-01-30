@@ -17,7 +17,7 @@ using System.Threading.Tasks;
 namespace AspNetZeroOrganisationUnitClone.MyOrganizationUnit
 {
     //[AbpAuthorize(PermissionNames.Pages_OrganizationUnits)]
-    public class OrganizationUnitAppService : AsyncCrudAppService<OrganizationUnit, MyOrganizationUnitDto, long, PagedAndSortedResultRequestDto, CreateMyOrganizationUnitDto, MyOrganizationUnitDto>, IOrganisationUnitAppService
+    public class OrganizationUnitAppService : AsyncCrudAppService<OrganizationUnit, OrganizationUnitDto, long, PagedAndSortedResultRequestDto, CreateOrganizationUnitDto, OrganizationUnitDto>, IOrganisationUnitAppService
     {
         private readonly IRepository<OrganizationUnit, long> _organizationUnitRepository;
         private readonly IRepository<UserOrganizationUnit, long> _userOrganizationUnitRepository;
@@ -35,13 +35,13 @@ namespace AspNetZeroOrganisationUnitClone.MyOrganizationUnit
             _OrganizationUnitManager = OrganizationUnitManager;
         }
 
-        public async Task<ListResultDto<MyOrganizationUnitDto>> GetOUs()
+        public async Task<ListResultDto<OrganizationUnitDto>> GetOUs()
         {
             var ous = await _organizationUnitRepository.GetAllListAsync();
-            return new ListResultDto<MyOrganizationUnitDto>(ObjectMapper.Map<List<MyOrganizationUnitDto>>(ous));
+            return new ListResultDto<OrganizationUnitDto>(ObjectMapper.Map<List<OrganizationUnitDto>>(ous));
         }
 
-        public virtual void CreateOU(CreateMyOrganizationUnitDto organizationUnit)
+        public virtual void CreateOU(CreateOrganizationUnitDto organizationUnit)
         {
             CheckCreatePermission();
             var ou = ObjectMapper.Map<OrganizationUnit>(organizationUnit);
@@ -92,7 +92,7 @@ namespace AspNetZeroOrganisationUnitClone.MyOrganizationUnit
         //    _OrganizationUnitManager.Update(organizationUnit);
         //}
 
-        public override async Task<MyOrganizationUnitDto> UpdateAsync(MyOrganizationUnitDto organizationUnit)
+        public override async Task<OrganizationUnitDto> UpdateAsync(OrganizationUnitDto organizationUnit)
         {
             CheckUpdatePermission();
 

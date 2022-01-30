@@ -10,8 +10,8 @@ namespace AspNetZeroOrganisationUnitClone.MyOrganizationUnit.Dto
     {
         public OUMapProfile()
         {
-            CreateMap<OrganizationUnit, MyOrganizationUnitDto>().ReverseMap();
-            CreateMap<CreateMyOrganizationUnitDto, OrganizationUnit>().ReverseMap();
+            CreateMap<OrganizationUnit, OrganizationUnitDto>().ReverseMap();
+            CreateMap<CreateOrganizationUnitDto, OrganizationUnit>().ReverseMap();
         }
     }
 }

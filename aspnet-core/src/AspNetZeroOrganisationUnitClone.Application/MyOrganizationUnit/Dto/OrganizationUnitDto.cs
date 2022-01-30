@@ -9,7 +9,7 @@ using System.Text;
 
 namespace AspNetZeroOrganisationUnitClone.MyOrganizationUnit.Dto
 {
-    public class CreateMyOrganizationUnitDto : FullAuditedEntityDto<long>, IMayHaveTenant
+    public class OrganizationUnitDto: FullAuditedEntityDto<long>, IMayHaveTenant
     {
         //
         // Summary:

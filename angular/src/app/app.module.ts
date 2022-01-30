@@ -14,6 +14,11 @@ import { ServiceProxyModule } from '@shared/service-proxies/service-proxy.module
 import { SharedModule } from '@shared/shared.module';
 import { HomeComponent } from '@app/home/home.component';
 import { AboutComponent } from '@app/about/about.component';
+// setup for OU
+import {TreeModule} from 'primeng/tree';
+import {CardModule} from 'primeng/card';
+import {ContextMenuModule} from 'primeng/contextmenu';
+import {ToastModule} from 'primeng/toast';
 // tenants
 import { TenantsComponent } from '@app/tenants/tenants.component';
 import { CreateTenantDialogComponent } from './tenants/create-tenant/create-tenant-dialog.component';
@@ -38,6 +43,12 @@ import { SidebarComponent } from './layout/sidebar.component';
 import { SidebarLogoComponent } from './layout/sidebar-logo.component';
 import { SidebarUserPanelComponent } from './layout/sidebar-user-panel.component';
 import { SidebarMenuComponent } from './layout/sidebar-menu.component';
+// organizationunit
+import { OrganizationUnitsComponent } from '@app/organizationunits/organizationunits.component';
+// tslint:disable-next-line: max-line-length
+import { CreateOrganizationUnitDialogComponent } from './organizationunits/create-organizationunit/create-organizationunit-dialog.component';
+import { EditOrganizationUnitDialogComponent } from './organizationunits/edit-organizationunit/edit-organizationunit-dialog.component';
+
 
 @NgModule({
   declarations: [
@@ -67,7 +78,11 @@ import { SidebarMenuComponent } from './layout/sidebar-menu.component';
     SidebarComponent,
     SidebarLogoComponent,
     SidebarUserPanelComponent,
-    SidebarMenuComponent
+    SidebarMenuComponent,
+     // OUs
+     OrganizationUnitsComponent,
+     CreateOrganizationUnitDialogComponent,
+     EditOrganizationUnitDialogComponent
   ],
   imports: [
     CommonModule,
@@ -83,6 +98,10 @@ import { SidebarMenuComponent } from './layout/sidebar-menu.component';
     ServiceProxyModule,
     SharedModule,
     NgxPaginationModule,
+    TreeModule,
+    CardModule,
+    ContextMenuModule,
+    ToastModule
   ],
   providers: [],
   entryComponents: [
@@ -96,6 +115,9 @@ import { SidebarMenuComponent } from './layout/sidebar-menu.component';
     CreateUserDialogComponent,
     EditUserDialogComponent,
     ResetPasswordDialogComponent,
+    // OUs
+    CreateOrganizationUnitDialogComponent,
+    EditOrganizationUnitDialogComponent,
   ],
 })
 export class AppModule {}
