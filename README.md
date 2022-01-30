@@ -1,37 +1,49 @@
-# Important
 
-Issues of this repository are tracked on https://github.com/aspnetboilerplate/aspnetboilerplate. Please create your issues on https://github.com/aspnetboilerplate/aspnetboilerplate/issues.
+<h1>Overview</h1>
+<p>
+This project demonstrates how to recreate the organsational unit feature exactly as it is on the commercial AspNetZero version
+</p>
+<h1>Features</h1>
+<p>
+<ul>
+    <li>
+       Create Root Unit
+    </li>
+    <li>
+        Edit Units
+    </li>
+    <li>
+        Add Sub-Unit
+    </li>
+    <li>
+        Delete Unit
+    </li>
+</ul>
 
-# Introduction
+<h1>Features to be added</h1>
+<p>
+<ul>
+    <li>
+       Drag and drop Units
+    </li>
+    <li>
+        Unit Members management
+    </li>
+    <li>
+        Unit Roles Management
+    </li>
+</ul>
+</p>
 
-This is a template to create **ASP.NET Core MVC / Angular** based startup projects for [ASP.NET Boilerplate](https://aspnetboilerplate.com/Pages/Documents). It has 2 different versions:
 
-1. [ASP.NET Core MVC & jQuery](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Core) (server rendered multi-page application).
-2. [ASP.NET Core & Angular](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Angular) (single page application).
+This project uses ASP.NET Boilerplate [ASP.NET Boilerplate](https://aspnetboilerplate.com/Pages/Documents). 
+
+User Interface is based on [AdminLTE theme](https://github.com/ColorlibHQ/AdminLTE). 
+and [PrimeNG](https://primefaces.org/primeng/showcase/#/)
  
-User Interface is based on [AdminLTE theme](https://github.com/ColorlibHQ/AdminLTE).
- 
-# Download
-
-Create & download your project from https://aspnetboilerplate.com/Templates
-
-# Screenshots
-
-#### Sample Dashboard Page
-![](_screenshots/module-zero-core-template-ui-home.png)
-
-#### User Creation Modal
-![](_screenshots/module-zero-core-template-ui-user-create-modal.png)
-
-#### Login Page
-
-![](_screenshots/module-zero-core-template-ui-login.png)
-
-# Documentation
-
-* [ASP.NET Core MVC & jQuery version.](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Core)
-* [ASP.NET Core & Angular  version.](https://aspnetboilerplate.com/Pages/Documents/Zero/Startup-Template-Angular)
-
-# License
 
 [MIT](LICENSE).
+
+<h1>Project Demo</h1>
+<img src="Animation.gif" alt="Rental Management System Demo" title="Rental Management System Demo"/>
+<img src="Swagger.gif" alt="Rental Management System API Demo" title="Rental Management System API Demo"/>
