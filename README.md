@@ -45,5 +45,5 @@ and [PrimeNG](https://primefaces.org/primeng/showcase/#/)
 [MIT](LICENSE).
 
 <h1>Project Demo</h1>
-<img src="Animation.gif" alt="Rental Management System Demo" title="Rental Management System Demo"/>
-<img src="Swagger.gif" alt="Rental Management System API Demo" title="Rental Management System API Demo"/>
+<img src="Animation.gif" alt="OU Demo" title="OU Demo"/>
+<img src="Swagger.gif" alt="OU API Demo" title="OU API Demo"/>
